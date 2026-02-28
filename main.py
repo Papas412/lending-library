@@ -7,7 +7,7 @@ class Book:
 
     def __str__(self):
         return f"{self.title} by {self.author} (ISBN: {self.isbn})"
-    
+
     def borrow(self):
         if self.is_available:
             self.is_available = False
@@ -21,13 +21,9 @@ class Book:
             return True
         else:
             return False
-    
+
     def get_status(self):
         if self.is_available:
             return "Available"
         else:
             return "Borrowed"
-
-    def __str__(self)   :
-        return f"{self.title} by {self.author} (ISBN: {self.isbn}) "
-           
